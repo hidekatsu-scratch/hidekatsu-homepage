@@ -4,61 +4,90 @@
     <meta charset="utf-8">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>homepage - hidekatsu</title>
+    
     <script>
-      -->やあ！！僕はhidekatsuだよ
-      -->html弱者...
+      // やあ！！僕がhidekatsuだよ
+      // html弱者...
     </script>
+
     <style>
       * {
-      font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", "HG丸ｺﾞｼｯｸM-PRO", "sans-serif";
+        font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", "HG丸ｺﾞｼｯｸM-PRO", "sans-serif";
+        box-sizing: border-box;
       }
-      .box {
-        width:80%;
-        margin: 10 auto;
-        border: 3px solid #ccc;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 8px;
-        padding:20px;
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f7fa;
       }
       body {
         margin: 0;
         padding: 0;
         min-height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #fffff;
-        opacity: 0.4;
-        z-index: -1;
-        background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+        background-color: #ffffff;
+        background-image: 
+          radial-gradient(#ffc107 2px, transparent 2px),
+          radial-gradient(#ffc107 2px, transparent 2px);
         background-size: 40px 40px;
-        background-position: 0 0,20px 20px;
+        background-position: 0 0, 20px 20px;
       }
       h1 {
+        text-align: center;
         margin-top: 80px;
         margin-bottom: 40px;
+        color: #2b3a42;
+        font-size: 2.2rem;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .box {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto 24px auto;
+        border: 3px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      .box h2 {
+        margin-top: 0;
+        color: #2b3a42;
+      }
+
+      .box p {
+        margin: 8px 0;
+        color: #4a5568;
       }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
       <h1>hidekatsuのホームページ</h1>
     </header>
     <main>
-      <div class="box"><h2>私とは</h2>
-      <p>その辺に生息している学生です。</p>
-      <p>適当にプログラミングやらしています。</p></div>
-      <div class="box"><h2>できること</h2>
-      <p>Scratch</p>
-      <p>html,css,js(少しだけ)</p></div>
-      <div class="box"><h2>やりたいこと</h2>
-      <p>C</p>
-      <p>OS</p></div>
+      <div class="box">
+        <h2>私とは</h2>
+        <p>その辺に生息している学生です。</p>
+        <p>適当にプログラミングやらしています。</p>
+      </div>
+      <div class="box">
+        <h2>できること</h2>
+        <p>Scratch</p>
+        <p>html,css,js(少しだけ)</p>
+      </div>
+      <div class="box">
+        <h2>やりたいこと</h2>
+        <p>C</p>
+        <p>OS</p>
+      </div>
     </main>
     <footer>
-      
     </footer>
-  </body>
+
+</body>
 </html>
